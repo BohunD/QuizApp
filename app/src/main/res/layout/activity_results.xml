@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:background="@drawable/congrats"
+    android:orientation="vertical"
+    tools:context=".ResultsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Game over! \nYour results:"
+        android:gravity="center"
+        android:textSize="40dp"/>
+    <TextView
+        android:id="@+id/TVName"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/TVCorrect"
+            android:layout_width="1dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text = "0 correct answers"
+            android:layout_weight="10"
+            android:textSize="30dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/correct"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/TVWrong"
+            android:layout_width="1dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text = "0 wrong answers"
+            android:layout_weight="10"
+            android:textSize="30dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wrong"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+<Button
+    android:id="@+id/btnRestart"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:textColor="@color/black"
+
+    android:layout_height="wrap_content"
+    android:text="restart"
+    android:textSize="25dp"/>
+</LinearLayout>
